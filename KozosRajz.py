@@ -1,5 +1,6 @@
 import turtle
 
+turtle.bgcolor("light blue")
 hossz=50
 
 turtle.fillcolor("grey")
@@ -26,4 +27,26 @@ while z<2:
     turtle.left(90)
     z+=1
 turtle.end_fill()
+
+turtle.forward(75)
+
+k = 0
+while k < 3:
+    if k == 0:
+        turtle.fillcolor("green")
+    elif k == 1:
+        turtle.fillcolor("yellow")
+    else:
+        turtle.fillcolor("red")
+    turtle.begin_fill()
+    turtle.circle(35)
+    turtle.penup()
+    turtle.left(90)
+    turtle.forward(70+25)
+    turtle.right(90)
+    turtle.pendown()
+    turtle.end_fill()
+
+    k +=1
+
 turtle.done()
